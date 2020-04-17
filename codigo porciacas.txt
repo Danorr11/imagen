@@ -1,0 +1,108 @@
+int ancho=124;
+int alto=124;
+
+int x=5;
+int y=200;
+
+PImage imagen;
+
+void setup()
+{
+  size(700,800);
+  imagen=loadImage("cuadro_gato.jpg");
+
+}
+void draw()
+{
+ /* scale(1.15);
+    image(imagen,0,0);
+   */ 
+   stroke(#000000);
+    strokeWeight(10);
+  line(18,20,30,585);
+  
+  stroke(#000000);
+    strokeWeight(10);
+  line(18,20,584,20);
+  
+  stroke(#000000);
+    strokeWeight(10);
+  line(590,20,575,580);
+  
+  stroke(#000000);
+    strokeWeight(10);
+    line(30,584,575,585);
+    
+    fill(#F74199);
+    rect(30,455,ancho,alto);
+    
+    fill(#6C0828);
+    rect(154,455,350,128);
+    stroke(#F581CE);
+   
+    for (int i = 165; i < 570; i = i+80) {
+  for (int j = 485; j <574; j = j+25) {
+    point(i, j);
+  }
+}
+    stroke(#000000);
+    fill(#5069EA);
+    rect(430,365,145,90);
+  
+  stroke(#DB92E5);
+    strokeWeight(15);  
+ for (int i = 443; i < 585; i = i+30) {
+  line(i, 443, i, 377);
+ }
+    stroke(#000000); 
+    fill(#F74199);
+    triangle(575,390,570,580,360,580);
+    
+    strokeWeight(10);
+     fill(#D89307);
+    rect(30,190,124,265);
+    
+    strokeWeight(20);
+    fill(#000000);
+    rect(155,192,125,255);
+    
+   
+   stroke(#F5E481);
+    for (int i = 45; i < 150; i = i+45) {
+  for (int j = 240; j < 450; j = j+40) {
+    point(i, j);
+  }
+}
+   
+    strokeWeight(10);
+ stroke(#000000);
+    fill(#C442D8);
+    triangle(155,270,155,456,370,455);
+  
+  fill(#E581F5);
+    triangle(150,270,45,198,154,198);
+    
+    fill(#000000);
+    rect(24,105,165,85);
+     
+     fill(#8B0836);
+    rect(20,25,198,85);
+    
+    
+    
+     rect(430,195,148,160);
+    
+    fill(#C442D8);
+    rect(220,25,360,165);
+    
+    fill(#6C0828);
+    triangle(198,25,375,25,157,198);
+  
+    fill(#E581F5);
+    triangle(165,200,375,34,285,198);
+    
+    fill(#D89307);
+    triangle(575,30,570,195,390,190);
+    
+    
+}
